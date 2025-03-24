@@ -50,21 +50,17 @@ class Apartment(House):
         else:
             super().update(attr, value)
 
-# Creating instances
 house_one = House(1, "Ratoath", "Ireland", 2, 150000)
 apartment_one = Apartment(2, "Kollam", "India", 2, 5000, 5, True)
 
-# Showing details
 house_one.show_details()
 apartment_one.show_details()
 
-# Updating attributes
 house_one.update("price", 320000)
 house_one.update("num_beds", 4)
 apartment_one.update("floor", 6)
 apartment_one.update("has_elevator", False)
 
-# Showing updated details
 print("Updated Details:")
 house_one.show_details()
 apartment_one.show_details()

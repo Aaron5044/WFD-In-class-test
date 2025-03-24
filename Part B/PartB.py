@@ -56,7 +56,7 @@ class Apartment(House):
 # Unit Test Class
 class TestHouse(unittest.TestCase):
 
-    # B2: Test if an object is an instance of a class
+    # B2: Test instance of a class
     def test_house(self):
         house_one = House(1, "Ratoath", "Ireland", 2, 150000)
         self.assertIsInstance(house_one, House)
@@ -68,7 +68,7 @@ class TestHouse(unittest.TestCase):
         self.assertNotIsInstance(house_one, Apartment)
         print("Test Passed: test_apartment")
 
-    # B4: Test if 2 objects are identical
+    # B4: Test if two objects are identical
     def test_identical(self):
         house_one = House(1, "Ratoath", "Ireland", 2, 150000)
         house_two = House(1, "Ratoath", "Ireland", 2, 150000)
