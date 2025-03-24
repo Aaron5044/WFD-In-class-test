@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from MyApp.views import home
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', home),  # This makes "home" the default page
 ]
